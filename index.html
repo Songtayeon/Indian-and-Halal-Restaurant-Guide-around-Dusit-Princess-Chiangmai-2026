@@ -17,15 +17,15 @@ font-family:Inter,sans-serif;
 color:#21362f;
 }
 
-/* เรียกรูปพื้นหลัง dusit-princess-hero.jpg โดยตรง */
+  
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), 
-                    url('dusit-princess-hero.jpg');
+                    url('dusit-princess-hero.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 60px 20px;
+  padding: 100px 600px;
   text-align: center;
 }
 
@@ -49,17 +49,21 @@ opacity:.9;
 text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
-.main-btn{
-display:inline-block;
-background:#c79b3b;
-padding:14px 28px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-font-weight:600;
-box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+.main-btn {
+  display: inline-block;
+  background: #c79b3b;
+  padding: 14px 28px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
-
+.main-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.5);
+}
 .container{
 max-width:1100px;
 margin:auto;
@@ -159,11 +163,11 @@ opacity:.8;
 
 <header class="hero">
 
-  <!-- ชี้ไปที่ dusit-princess-logo.png โดยตรง (หากไฟล์จริงเป็น .jpg ให้แก้ .png เป็น .jpg นะครับ) -->
+  
   <img src="dusit-princess-logo.png" alt="Dusit Princess Chiang Mai Logo" class="logo">
   
   <h1>Indian & Halal Food Guide</h1>
-  <p>Near Dusit Princess Chiang Mai</p>
+  <p>Near by Dusit Princess Chiang Mai</p>
 
   <a class="main-btn"
      href="https://maps.google.com/?q=Dusit+Princess+Chiang+Mai"
@@ -331,10 +335,21 @@ opacity:.8;
 
 <footer>
 
-<h3>Dusit Princess Chiang Mai Concierge</h3>
-<p>Handpicked Indian & Halal dining recommendations near the hotel.</p>
-<br>
-<small>Distances are approximate from Dusit Princess Chiang Mai.</small>
+  <h3>Dusit Princess Chiang Mai Concierge</h3>
+  <p>Handpicked Indian & Halal dining recommendations near the hotel.</p>
+  
+  <p style="margin-top: 15px;">
+    🌐 Official Website: 
+    <a href="https://www.dusit.com/dusitprincess-chiangmai/" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       style="color: #c79b3b; text-decoration: underline; font-weight: 500;">
+       dusit.com/dusitprincess-chiangmai
+    </a>
+  </p>
+
+  <br>
+  <small>Distances are approximate from Dusit Princess Chiang Mai.</small>
 
 </footer>
 
