@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Indian & Halal Food Guide | Dusit Princess Chiang Mai</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
-*{margin:0;padding:0;box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
 background:#f8f5ef;
@@ -18,30 +19,29 @@ color:#21362f;
 }
 
 .hero{
-background:linear-gradient(160deg,#0f3d34,#194d42);
+background:linear-gradient(135deg,#0f3d34,#1d5a4b);
 color:white;
-padding:60px 25px;
 text-align:center;
+padding:60px 20px;
 }
 
 .hero h1{
 font-family:"Cormorant Garamond",serif;
-font-size:44px;
+font-size:46px;
 line-height:1.1;
-margin-bottom:10px;
 }
 
 .hero p{
+margin:15px 0 25px;
 opacity:.9;
-margin-bottom:25px;
 }
 
-.btn-main{
+.main-btn{
 display:inline-block;
-background:#c9a44c;
-color:white;
+background:#c79b3b;
 padding:14px 28px;
 border-radius:30px;
+color:white;
 text-decoration:none;
 font-weight:600;
 }
@@ -49,17 +49,17 @@ font-weight:600;
 .container{
 max-width:1100px;
 margin:auto;
-padding:35px 20px;
+padding:30px 18px;
 }
 
 .map{
+border-radius:18px;
 overflow:hidden;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
+box-shadow:0 8px 25px rgba(0,0,0,.08);
 margin-bottom:40px;
 }
 
-iframe{
+.map iframe{
 width:100%;
 height:420px;
 border:none;
@@ -69,39 +69,45 @@ border:none;
 font-family:"Cormorant Garamond",serif;
 font-size:36px;
 margin:35px 0 20px;
+display:flex;
+align-items:center;
+gap:10px;
 }
 
 .grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
 gap:20px;
 }
 
 .card{
 background:white;
 border-radius:18px;
-padding:22px;
-box-shadow:0 5px 18px rgba(0,0,0,.07);
+overflow:hidden;
+box-shadow:0 6px 20px rgba(0,0,0,.08);
 transition:.25s;
 }
 
 .card:hover{
-transform:translateY(-3px);
+transform:translateY(-4px);
 }
 
-.card h3{
+.thumb{
+height:170px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:54px;
+background:linear-gradient(135deg,#e9dfc2,#d8c08d);
+}
+
+.info{
+padding:20px;
+}
+
+.info h3{
 font-size:20px;
-margin-bottom:10px;
-}
-
-.badge{
-display:inline-block;
-background:#e8f2ef;
-color:#0f3d34;
-padding:5px 12px;
-border-radius:20px;
-font-size:13px;
-margin-bottom:12px;
+margin-bottom:8px;
 }
 
 .distance{
@@ -112,19 +118,19 @@ margin-bottom:15px;
 .button{
 display:block;
 text-align:center;
-background:#0f3d34;
-color:white;
 padding:12px;
 border-radius:10px;
 text-decoration:none;
 font-weight:600;
+background:#0f3d34;
+color:white;
 }
 
 footer{
-margin-top:50px;
-padding:40px;
+margin-top:60px;
 background:#0f3d34;
 color:white;
+padding:35px;
 text-align:center;
 }
 
@@ -140,14 +146,13 @@ opacity:.8;
 <header class="hero">
 
 <h1>Indian & Halal Food Guide</h1>
-
 <p>Near Dusit Princess Chiang Mai</p>
 
-<a class="btn-main"
+<a class="main-btn"
 href="https://maps.google.com/?q=Dusit+Princess+Chiang+Mai"
 target="_blank">
 
-Open Hotel Location
+📍 Open Hotel Location
 
 </a>
 
@@ -157,123 +162,153 @@ Open Hotel Location
 
 <div class="map">
 
-<iframe src="https://maps.google.com/maps?q=Dusit%20Princess%20Chiang%20Mai&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+<iframe src="https://maps.google.com/maps?q=Dusit%20Princess%20Chiang%20Mai&t=&z=15&output=embed"></iframe>
 
 </div>
 
-<h2 class="section-title">Indian Restaurants</h2>
+<h2 class="section-title">🍛 Indian Restaurants</h2>
 
 <div class="grid">
 
 <div class="card">
-<span class="badge">3 min walk</span>
+<div class="thumb">🍛</div>
+<div class="info">
 <h3>Rajdarbar Indian Restaurant</h3>
-<p class="distance">0.2 km</p>
+<p class="distance">0.2 km · 3 min walk</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Rajdarbar+Indian+Restaurant+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">1 min walk</span>
+<div class="thumb">🥥</div>
+<div class="info">
 <h3>Coconuts N Cocktails</h3>
-<p class="distance">0.1 km</p>
+<p class="distance">0.1 km · 1 min walk</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Coconuts+N+Cocktails+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">4 min walk</span>
+<div class="thumb">🔥</div>
+<div class="info">
 <h3>Indish Restaurant Bar & Grill</h3>
-<p class="distance">0.3 km</p>
+<p class="distance">0.3 km · 4 min walk</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Indish+Restaurant+Bar+Grill+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">7 min walk</span>
+<div class="thumb">🌶️</div>
+<div class="info">
 <h3>Spices Indian Restaurant</h3>
-<p class="distance">0.6 km</p>
+<p class="distance">0.6 km · 7 min walk</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Spices+Indian+Restaurant+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">12 min walk</span>
+<div class="thumb">🍗</div>
+<div class="info">
 <h3>Grill of Punjab</h3>
-<p class="distance">0.9 km</p>
+<p class="distance">0.9 km · 12 min walk</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Grill+of+Punjab+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">5 min drive</span>
+<div class="thumb">🍢</div>
+<div class="info">
 <h3>Grill of India</h3>
-<p class="distance">1.3 km</p>
+<p class="distance">1.3 km · 5 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Grill+of+India+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">7 min drive</span>
+<div class="thumb">🇮🇳</div>
+<div class="info">
 <h3>New Delhi Indian Food</h3>
-<p class="distance">2.7 km</p>
+<p class="distance">2.7 km · 7 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=New+Delhi+Indian+Food+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 </div>
 
-<h2 class="section-title">Halal Restaurants</h2>
+<h2 class="section-title">🕌 Halal Restaurants</h2>
 
 <div class="grid">
 
 <div class="card">
-<span class="badge">7 min drive</span>
+<div class="thumb">🍜</div>
+<div class="info">
 <h3>Huen Phen Halal</h3>
-<p class="distance">1 km</p>
+<p class="distance">1 km · 7 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Huen+Phen+Halal+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">7 min drive</span>
+<div class="thumb">🥘</div>
+<div class="info">
 <h3>Pakorn's Kitchen Halal</h3>
-<p class="distance">0.7 km</p>
+<p class="distance">0.7 km · 7 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Pakorn's+Kitchen+Halal+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">7 min drive</span>
+<div class="thumb">🍛</div>
+<div class="info">
 <h3>Karachi Restaurant</h3>
-<p class="distance">0.5 km</p>
+<p class="distance">0.5 km · 7 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Karachi+Restaurant+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">7 min drive</span>
+<div class="thumb">🥙</div>
+<div class="info">
 <h3>Istanbul Restaurant</h3>
-<p class="distance">1 km</p>
+<p class="distance">1 km · 7 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Istanbul+Restaurant+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">3 min drive</span>
+<div class="thumb">🍲</div>
+<div class="info">
 <h3>The Ruammit Halal Restaurant</h3>
-<p class="distance">1 km</p>
+<p class="distance">1 km · 3 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=The+Ruammit+Halal+Restaurant+Chiang+Mai">Directions</a>
 </div>
+</div>
 
 <div class="card">
-<span class="badge">5 min drive</span>
+<div class="thumb">🍔</div>
+<div class="info">
 <h3>Fatimah Burger House</h3>
-<p class="distance">1.6 km</p>
+<p class="distance">1.6 km · 5 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Fatimah+Burger+House+Chiang+Mai">Directions</a>
 </div>
-
-<div class="card">
-<span class="badge">6 min drive</span>
-<h3>Khao Soi Islam</h3>
-<p class="distance">2.2 km</p>
-<a class="button" target="_blank" href="https://maps.google.com/?q=Khao+Soi+Islam+Chiang+Mai">Directions</a>
 </div>
 
 <div class="card">
-<span class="badge">6 min drive</span>
+<div class="thumb">🍜</div>
+<div class="info">
+<h3>Khao Soi Islam</h3>
+<p class="distance">2.2 km · 6 min drive</p>
+<a class="button" target="_blank" href="https://maps.google.com/?q=Khao+Soi+Islam+Chiang+Mai">Directions</a>
+</div>
+</div>
+
+<div class="card">
+<div class="thumb">⭐</div>
+<div class="info">
 <h3>Everything Halal CNX</h3>
-<p class="distance">1.8 km</p>
+<p class="distance">1.8 km · 6 min drive</p>
 <a class="button" target="_blank" href="https://maps.google.com/?q=Everything+Halal+CNX">Directions</a>
+</div>
 </div>
 
 </div>
@@ -283,11 +318,8 @@ Open Hotel Location
 <footer>
 
 <h3>Dusit Princess Chiang Mai Concierge</h3>
-
 <p>Handpicked Indian & Halal dining recommendations near the hotel.</p>
-
 <br>
-
 <small>Distances are approximate from Dusit Princess Chiang Mai.</small>
 
 </footer>
