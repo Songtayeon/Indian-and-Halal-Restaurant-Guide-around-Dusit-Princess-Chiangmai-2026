@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,19 +9,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-.logo {
-  max-width: 150px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.hero-img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
-  margin: 15px 0;
-}
 *{margin:0;padding:0;box-sizing:border-box;}
 
 body{
@@ -30,14 +17,20 @@ font-family:Inter,sans-serif;
 color:#21362f;
 }
 
+/* ปรับแก้ไขส่วน Hero Header */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/dusit-princess-hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(18, 53, 36, 0.75), rgba(18, 53, 36, 0.75)), 
+              url('dusit-princess-hero.jpg') center/cover no-repeat;
   color: #ffffff;
   padding: 60px 20px;
   text-align: center;
+}
+
+.hero .logo {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
 .hero h1{
@@ -159,18 +152,17 @@ opacity:.8;
 <body>
 
 <header class="hero">
-<img src="images/dusit-princess-logo.png" alt="Dusit Princess Chiang Mai Logo" class="logo">
-<h1>Indian & Halal Food Guide</h1>
-<p>Near Dusit Princess Chiang Mai</p>
-<img src="images/dusit-princess-hero.jpg" alt="Dusit Princess Chiang Mai" class="hero-img">
-<a class="main-btn"
-href="https://maps.google.com/?q=Dusit+Princess+Chiang+Mai"
-target="_blank">
+  <!-- โลโก้อยู่ด้านบนสุด -->
+  <img src="dusit-princess-logo.jpg" alt="Dusit Princess Chiang Mai Logo" class="logo">
+  
+  <h1>Indian & Halal Food Guide</h1>
+  <p>Near Dusit Princess Chiang Mai</p>
 
-📍 Open Hotel Location
-
-</a>
-
+  <a class="main-btn"
+     href="https://maps.google.com/?q=Dusit+Princess+Chiang+Mai"
+     target="_blank">
+     📍 Open Hotel Location
+  </a>
 </header>
 
 <div class="container">
